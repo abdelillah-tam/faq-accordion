@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'm': {'max': '375px'}
+        'm': {'max': '375px'},
+        't': {'max': '640px'}
       },
       colors:{
         'light-pink': 'hsl(275, 100%, 97%)',

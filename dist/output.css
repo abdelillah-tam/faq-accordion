@@ -2520,11 +2520,6 @@ video {
   }
 }
 
-.before\:items-center::before {
-  content: var(--tw-content);
-  align-items: center;
-}
-
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2564,6 +2559,17 @@ video {
   }
 
   .m\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .t\:w-11\/12 {
+    width: 91.666667%;
+  }
+
+  .t\:text-5xl {
     font-size: 3rem;
     line-height: 1;
   }
