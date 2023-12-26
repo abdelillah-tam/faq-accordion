@@ -2,7 +2,18 @@ const questions = document.getElementsByTagName("h2");
 const plus = document.getElementsByClassName("plus");
 const answers = document.getElementsByClassName("answer");
 
+const screenHeight = window.screen.height;
+const img = document.getElementById('background');
+if(screenHeight > 640){
+  img.src = './images/background-pattern-desktop.svg';
+}else{
+  img.src = './images/background-pattern-mobile.svg';
+}
+
 for (let i = 0; i < plus.length; i++) {
+  
+
+
   const element = answers[i];
   if (i > 0) {
     element.style.display = "none";
