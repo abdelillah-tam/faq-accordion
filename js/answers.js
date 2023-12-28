@@ -39,5 +39,10 @@ for (let i = 0; i < plus.length; i++) {
   };
 
   plus[i].onclick = on;
+  plus[i].addEventListener("keypress", (event) => {
+    if(event.key === 'enter'){
+      on();
+    }
+  });
   questions[i].onclick = on;
 }
